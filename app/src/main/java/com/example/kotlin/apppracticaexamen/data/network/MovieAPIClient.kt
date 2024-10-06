@@ -1,13 +1,13 @@
 package com.example.kotlin.apppracticaexamen.data.network
 
-import com.example.kotlin.apppracticaexamen.data.network.model.MovieBase
+import com.example.examenprueba.data.network.NetworkModuleDI
 import com.example.kotlin.apppracticaexamen.data.network.model.MovieObject
 
 class MovieAPIClient {
     private lateinit var api: MovieAPIService
 
     suspend fun getMovieList(): MovieObject? {
-        api = MovieModuleDI()
+        api = NetworkModuleDI()
 
         return try {
             api.getMovieList()
@@ -16,6 +16,4 @@ class MovieAPIClient {
             null
         }
     }
-
-
 }

@@ -1,8 +1,8 @@
 package com.example.kotlin.apppracticaexamen.data.network.model
 
+import com.google.gson.annotations.SerializedName
+
 data class MovieObject(
-    val page: Int,
-    val results: List<MovieBase>,
-    val total_results: Int,
-    val total_pages: Int
+    @SerializedName("page") val page: Int,
+    @SerializedName("results") val results: ArrayList<MovieBase>,
 )
