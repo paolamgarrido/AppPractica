@@ -32,4 +32,11 @@ class MovieAdapter: RecyclerView.Adapter<MovieViewHolder>() {
     override fun getItemCount(): Int {
         return data.size
     }
+
+    // Function to update the list dynamically
+    fun updateList(newData: ArrayList<MovieBase>) {
+        data = newData
+        notifyDataSetChanged()
+    }
+
 }

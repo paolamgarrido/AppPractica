@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@color/semiwhite"
+            android:background="@color/semiWhite"
             android:padding="8dp">
 
             <!-- ImageView on the left -->
@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:textColor="@color/semiblack"
+                    android:textColor="@color/semiBlack"
                     android:gravity="center_vertical"
                     android:text="Movie Title"
                     android:id="@+id/TVMovieTitle"
@@ -55,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:textColor="@color/semiblack"
+                    android:textColor="@color/semiBlack"
                     android:layout_marginTop="4dp"
                     android:text="Vote Average: 8.5"
                     android:id="@+id/TVVoteAverage" />
@@ -65,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
-                    android:textColor="@color/semiblack"
+                    android:textColor="@color/semiBlack"
                     android:layout_marginTop="4dp"
                     android:text="Overview goes here"
                     android:id="@+id/TVOverview" />
