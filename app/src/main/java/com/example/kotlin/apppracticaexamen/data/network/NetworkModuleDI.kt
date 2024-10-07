@@ -13,7 +13,7 @@ object NetworkModuleDI {
     // Crear un interceptor para agregar encabezados de autorización
     private val authInterceptor = Interceptor { chain ->
         val newRequest = chain.request().newBuilder()
-            .addHeader("Authorization", "Bearer ?")
+            .addHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNGM4NDQyYjJiNjQ1MTkzNzExMTUxZDEwZGU5NzQ0YyIsIm5iZiI6MTcyODIyOTM4NS4wMjI4MjcsInN1YiI6IjY3MDJhY2IzYzNjNWIzYTFhOGY3ZTA3YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.SFEQdq8Y8QZGGztfzv7T5RQO8AuEe6_Q0f-XSEpftx4")
             .addHeader("accept", "application/json")
             .build()
         chain.proceed(newRequest)
