@@ -1,4 +1,4 @@
-package com.example.kotlin.apppracticaexamen.framework.views
+package com.example.kotlin.apppracticaexamen.framework.views.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.kotlin.apppracticaexamen.databinding.ActivitySplashscreenBinding
 import com.example.kotlin.apppracticaexamen.framework.viewmodel.SplashscreenViewModel
+import com.example.kotlin.apppracticaexamen.framework.views.activities.fragments.MovieFragment
 
 class SplashscreenActivity: AppCompatActivity() {
 
@@ -38,7 +39,7 @@ class SplashscreenActivity: AppCompatActivity() {
     }
 
     private fun passViewGoToMain() {
-        var intent: Intent = Intent(this, MovieActivity::class.java)
+        var intent: Intent = Intent(this, MovieFragment::class.java)
 
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
 
